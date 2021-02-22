@@ -26,15 +26,15 @@ Secrets Name | Uses | Notes
 
 ## Deloy and Run
 <details>
-    <summary>点我查看需要添加的具体秘密变量</summary>
+    <summary>MacOS Install and Run</summary>
 <br>
-1. go to `Actions` Tab and select one of system workflow.
-2. Click `Run Workflow` button on the left of `This workflow has a workflow_dispatch event trigger` line.
-3. Wait until a few minutes.
-4. Go to https://dashboard.ngrok.com/status/tunnels and check if theres a one online tunnel running
-5. Copy the link(**without tcp://**) and go to VNC Viewer(Download and install it), input the link to connect area u copied from the website.
-6. Fill in those login info, within username `koolisw`and password from `VNC_PASSWORD` you typed.
-7. Enjoy!
+1. go to `Actions` Tab and select one of system workflow.\
+2. Click `Run Workflow` button on the left of `This workflow has a workflow_dispatch event trigger` line.\
+3. Wait until a few minutes.\
+4. Go to https://dashboard.ngrok.com/status/tunnels and check if theres a one online tunnel running.\
+5. Copy the link(**without tcp://**) and go to VNC Viewer(Download and install it), input the link to connect area u copied from the website.\
+6. Fill in those login info, within username `koolisw`and password from `VNC_PASSWORD` you typed.\
+7. Enjoy!\
 </details>
 
 ## Limits: 
