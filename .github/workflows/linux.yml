@@ -1,0 +1,22 @@
+name: MacOS Virtual Machine
+on: 
+  workflow_dispatch:
+defaults:
+  run:
+    shell: bash
+    
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setting Up the Ubuntu Environment
+      run: source linux-run.sh
+    - name: Connecting MacOS with Ngrok to VNC Server
+      run: ./ngrok authtoken $NGROK_AUTH_TOKEN
+      env:
+        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+    - name: Connecting MacOS with Ngrok to VNC Server
+      run: screen ./ngrok tcp 5901
+    - name: Keep Running Ubuntu System and keepAlive
+      uses: mxschmitt/action-tmate@v2
