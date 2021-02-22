@@ -16,7 +16,7 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 1. Fork this project
 2. Go to your peoject page, click `Settings` and go to `Secrets`, and then click `New Secret` to add these secrets below:
 Secrets Name | Uses | Notes
-:---: | :---: | :---:
+----- | ----- | -----
 `MAC_REALNAME` | For MacOS User Display Name | Type any name you want
 `MAC_USER_PASSWORD` | For MacOS System Admin Password | Type any password you want
 `NGROK_AUTH_TOKEN` | For **ngrok** tunnel uses | Go to website, and copy the API key from https://dashboard.ngrok.com/auth/your-authtoken
