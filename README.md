@@ -15,13 +15,13 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 ## Setting up:
 1. Fork this project
 2. Go to your peoject page, click `Settings` and go to `Secrets`, and then click `New Secret` to add these secrets below:
-| Secrets Name | Uses | Notes |
-| :---: | :---: | :---: |
-| `MAC_REALNAME` | For MacOS User Display Name | Type any name you want |
-| `MAC_USER_PASSWORD` | For MacOS System Admin Password | Type any password you want |
-| `NGROK_AUTH_TOKEN` | For **ngrok** tunnel uses | Go to website, and copy the API key from https://dashboard.ngrok.com/auth/your-authtoken |
-| `VNC_PASSWORD` | For the login password of VNC remote authentication | Type any password you want |
-| `WINDOWS_USER_PASSWORD` | For Windows 10 RDP login password | Type any password you want |
+Secrets Name | Uses | Notes
+:---: | :---: | :---:
+`MAC_REALNAME` | For MacOS User Display Name | Type any name you want
+`MAC_USER_PASSWORD` | For MacOS System Admin Password | Type any password you want
+`NGROK_AUTH_TOKEN` | For **ngrok** tunnel uses | Go to website, and copy the API key from https://dashboard.ngrok.com/auth/your-authtoken
+`VNC_PASSWORD` | For the login password of VNC remote authentication | Type any password you want
+`WINDOWS_USER_PASSWORD` | For Windows 10 RDP login password | Type any password you want
 
 ## Limits: 
 1. You can run each virtual machine only run up for **6** hours for execution time. If Virtual Machine reaches this limit, it will be terminated and clear everything.
