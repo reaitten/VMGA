@@ -1,6 +1,10 @@
 name: Windows RDP
 
-on: [push]
+on: 
+  workflow_dispatch:
+defaults:
+  run:
+    shell: bash
 
 jobs:
   build:
