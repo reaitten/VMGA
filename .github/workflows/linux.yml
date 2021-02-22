@@ -11,7 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setting Up the Ubuntu Environment
-      run: source linux-run.sh
+      run: source linux-run.sh "$LINUX_USER_PASSWORD"
+      env:
+        LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
     - name: Connecting to Ngrok
       run: ./ngrok authtoken $NGROK_AUTH_TOKEN
       env:
