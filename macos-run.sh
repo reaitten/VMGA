@@ -1,4 +1,4 @@
-#configure.sh MAC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN MAC_REALNAME
+#macos-run.sh MAC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN MAC_REALNAME
 
 #disable spotlight indexing
 sudo mdutil -i off -a
