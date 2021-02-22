@@ -24,6 +24,19 @@ Secrets Name | Uses | Notes
 `VNC_PASSWORD` | For the login password of VNC remote authentication | Type any password you want
 `WINDOWS_USER_PASSWORD` | For Windows 10 RDP login password | Type any password you want
 
+## Deloy and Run
+<details>
+    <summary>点我查看需要添加的具体秘密变量</summary>
+<br>
+1. go to `Actions` Tab and select one of system workflow.
+2. Click `Run Workflow` button on the left of `This workflow has a workflow_dispatch event trigger` line.
+3. Wait until a few minutes.
+4. Go to https://dashboard.ngrok.com/status/tunnels and check if theres a one online tunnel running
+5. Copy the link(**without tcp://**) and go to VNC Viewer(Download and install it), input the link to connect area u copied from the website.
+6. Fill in those login info, within username `koolisw`and password from `VNC_PASSWORD` you typed.
+7. Enjoy!
+</details>
+
 ## Limits: 
 1. You can run each virtual machine only run up for **6** hours for execution time. If Virtual Machine reaches this limit, it will be terminated and clear everything.
 2. Not suggested for you saving some of important and sensitive files to each machine, be risked that all files will be deleted and cannot be undo.
