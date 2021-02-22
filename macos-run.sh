@@ -1,4 +1,4 @@
-#configure.sh VNC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN
+#configure.sh MAC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN 
 
 #disable spotlight indexing
 sudo mdutil -i off -a
@@ -6,7 +6,7 @@ sudo mdutil -i off -a
 #Create new account
 sudo dscl . -create /Users/koolisw
 sudo dscl . -create /Users/koolisw UserShell /bin/bash
-sudo dscl . -create /Users/koolisw RealName "RealKoolisw Mac"
+sudo dscl . -create /Users/koolisw RealName $4
 sudo dscl . -create /Users/koolisw UniqueID 1001
 sudo dscl . -create /Users/koolisw PrimaryGroupID 80
 sudo dscl . -create /Users/koolisw NFSHomeDirectory /Users/koolisw
