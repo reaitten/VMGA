@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setting Up the Ubuntu Environment
       run: source linux-run.sh
-    - name: Connecting Ubuntu with Ngrok to VNC Server
+    - name: Connecting to Ngrok
       run: ./ngrok authtoken $NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
