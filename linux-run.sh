@@ -2,8 +2,7 @@
 
 sudo useradd -m koolisw
 sudo adduser koolisw sudo
-echo 'koolisw:1031' | sudo chpasswd
-sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+sudo chpasswd
 sudo apt update
 sudo apt -y install screen
 sudo apt -y install xfce4
