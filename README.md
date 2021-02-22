@@ -15,6 +15,7 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 ## Setting up:
 1. Fork this project
 2. Go to your peoject page, click `Settings` and go to `Secrets`, and then click `New Secret` to add these secrets below:
+
 Secrets Name | Uses | Notes
 ----- | ----- | -----
 `MAC_REALNAME` | For MacOS User Display Name | Type any name you want
