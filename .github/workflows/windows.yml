@@ -26,7 +26,7 @@ jobs:
       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Setting up username
-      run: Rename-LocalUser -Name "runneradmin" -NewName "koolisw"
+      run: Rename-LocalUser -Name "runneradmin" -NewName "koolisw" -Force
     - run: Rename-Computer -NewName "Koolisw-Virtual-Machine" -Restart -Force
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
