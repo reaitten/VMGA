@@ -25,6 +25,8 @@ jobs:
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
-    - run: Rename-LocalUser -Name "runneradmin" -NewName "koolisw"
+    - name: Setting up username
+      run: Rename-LocalUser -Name "runneradmin" -NewName "koolisw"
+    - run: Rename-Computer -NewName "Koolisw Windows Machine" -LocalCredential RemoteComputerAdminUser -Restart
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
