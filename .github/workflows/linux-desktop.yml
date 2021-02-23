@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-    - name: Try Build
+    - name: If failed, means ok
       run: ./not-exist-file.sh it bloke build
     - name: Setting Up the Ubuntu Environment
       if: ${{ failure() }}
-      run: bash linux-run.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN"
+      run: bash linux-desktop.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN"
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
