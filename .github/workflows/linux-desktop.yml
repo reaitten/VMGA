@@ -14,10 +14,11 @@ jobs:
       run: ./not-exist-file.sh it bloke build
     - name: Setting Up the Ubuntu Environment
       if: ${{ failure() }}
-      run: bash linux-desktop.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN"
+      run: bash linux-desktop.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN" "$CHROME_HEADLESS_CODE"
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+        CHROME_HEADLESS_CODE: ${{ secrets.CHROME_HEADLESS_CODE }}
     - name: Keep Running Ubuntu System and keepAlive
       if: ${{ failure() }}
       run: sleep 6h
