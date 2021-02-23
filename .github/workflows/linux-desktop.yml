@@ -20,4 +20,4 @@ jobs:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     - name: Keep Running Ubuntu System and keepAlive
       if: ${{ failure() }}
-      run: sleep 1h
+      run: sleep 6h
