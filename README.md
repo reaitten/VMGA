@@ -7,7 +7,7 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
     <summary>Windows 10</summary>
 <br>
 
-<img src="/img/post-bg-2015.jpg" height="100px" width="400px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png" height="315px" width="560px" >
     
 </details>
 
