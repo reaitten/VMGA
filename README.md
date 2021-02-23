@@ -21,6 +21,14 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
     
 </details>
 
+<details>
+    <summary>Windows 10</summary>
+<br>
+
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/96644176-D760-47D4-BED2-C47E62A6763F.png" height="193px" width="415px" >
+
+</details>
+
 ## Machine Specification:
 ### Windows and Linux:
 - 2-core vCPU
