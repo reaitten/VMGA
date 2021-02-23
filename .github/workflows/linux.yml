@@ -11,14 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setting Up the Ubuntu Environment
-      run: source linux-run.sh "$LINUX_USER_PASSWORD"
+      run: source linux-run.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN"
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-    - name: Connecting to Ngrok
-      run: ./ngrok authtoken $NGROK_AUTH_TOKEN
-      env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-    - name: Connecting Ubuntu with Ngrok to VNC Server
-      run: screen ./ngrok tcp 5901
+        NGROK_AUTH_TOKEN: ${{ secret.NGROK_AUTH_TOKEN }}
+
     - name: Keep Running Ubuntu System and keepAlive
-      uses: mxschmitt/action-tmate@v2
+      run: sleep 6h
