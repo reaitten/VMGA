@@ -22,8 +22,8 @@ sudo apt -y install firefox
 sudo hostname $LINUX_MACHINE_NAME
 sudo adduser $LINUX_USERNAME chrome-remote-desktop
 sudo apt install tightvncserver
-sudo echo -e "no\n$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | tightvncserver :1
-sudo echo -e "$GOOGLE_REMOTE_PIN\n$GOOGLE_REMOTE_PIN" | su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
+echo -e "no\n$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | tightvncserver :1
+echo -e "$GOOGLE_REMOTE_PIN\n$GOOGLE_REMOTE_PIN" | su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
   echo "Please set 'NGROK_AUTH_TOKEN'"
