@@ -39,6 +39,9 @@ type **yes** from the connect, and then type your ssh password by secrets of LIN
 4. Type **sudo -i** for root permission and type your password.
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E5527744-1ED1-4550-8867-EF4EC76D6895.png" height="381.6px" width="545.6px" >
 
+5. Enjoy having your FREE linux SSH VPS and type any command you want.(but only 6 hours)
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E6E9EA63-AC24-4FDB-AAF9-8B509658440A.png" height="363.3px" width="526.4px">
+
 </details>
 
 ## Machine Specification:
