@@ -1,9 +1,9 @@
 #linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN CHROME_HEADLESS_CODE LINUX_MACHINE_NAME LINUX_USERNAME
 #!/bin/bash
 
-sudo useradd -m $5
-sudo adduser $5 sudo
-echo "$5:$1" | sudo chpasswd
+sudo useradd -m $LINUX_USERNAME
+sudo adduser $LINUX_USERNAME sudo
+echo "$LINUX_USERNAME:$LINUX_USER_PASSWORD" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -17,12 +17,11 @@ sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
-sudo apt install nautilus nano -y 
-sudo apt -y install obs-studio
+sudo apt install nautilus nano -y
 sudo apt -y install firefox
-sudo hostname $4
-sudo adduser $5 chrome-remote-desktop
-su - $5 -c """$3"""
+sudo hostname $LINUX_MACHINE_NAME
+sudo adduser $LINUX_USERNAME chrome-remote-desktop
+su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
   echo "Please set 'NGROK_AUTH_TOKEN'"
@@ -57,6 +56,7 @@ if [[ -z "$HAS_ERRORS" ]]; then
   echo ""
   echo "=========================================="
   echo "To connect: $(grep -o -E "tcp://(.+)" < .ngrok.log | sed "s/tcp:\/\//ssh $USER@/" | sed "s/:/ -p /")"
+  echo "Connect with remote desktop: https://remotedesktop.google.com/access"
   echo "=========================================="
 else
   echo "$HAS_ERRORS"
