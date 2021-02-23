@@ -31,6 +31,9 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 2. Copy ssh with url
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" height="300px" width="561px" >
 
+3. Open cmd or Terminal from your windows/MacOS or Linux, and type command provided by github actions boxes.
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" height="346px" width="548px" >
+
 </details>
 
 ## Machine Specification:
