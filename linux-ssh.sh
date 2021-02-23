@@ -14,7 +14,7 @@ if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
 fi
 
 if [[ -z "$LINUX_USER_PASSWORD" ]]; then
-  echo "Please set 'LINUX_USER_PASSWORD' for user: $LINUX_USERNAME"
+  echo "Please set 'LINUX_USER_PASSWORD' for user: $USER"
   exit 3
 fi
 
@@ -24,8 +24,8 @@ wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip
 unzip ngrok-stable-linux-386.zip
 chmod +x ./ngrok
 
-echo "### Update user: $LINUX_USERNAME password ###"
-echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd "$LINUX_USERNAME"
+echo "### Update user: $USER password ###"
+echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd "$USER"
 
 echo "### Start ngrok proxy for 22 port ###"
 
@@ -40,7 +40,7 @@ HAS_ERRORS=$(grep "command failed" < .ngrok.log)
 if [[ -z "$HAS_ERRORS" ]]; then
   echo ""
   echo "=========================================="
-  echo "To connect: $(grep -o -E "tcp://(.+)" < .ngrok.log | sed "s/tcp:\/\//ssh $LINUX_USERNAME@/" | sed "s/:/ -p /")"
+  echo "To connect: $(grep -o -E "tcp://(.+)" < .ngrok.log | sed "s/tcp:\/\//ssh $USER@/" | sed "s/:/ -p /")"
   echo "=========================================="
 else
   echo "$HAS_ERRORS"
