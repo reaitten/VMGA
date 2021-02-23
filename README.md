@@ -7,7 +7,7 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
     <summary>Windows 10</summary>
 <br>
 
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png" height="315px" width="560px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png" height="495px" width="880px" >
     
 </details>
 
@@ -57,6 +57,9 @@ Secrets Name | Uses | Notes
 7. Enjoy!
 
 </details>
+
+- Reminders:
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/9a56f43b-0734-4186-b619-1588c208eb05.png" height="495px" width="880px" >
 
 ## Limits: 
 1. You can run each virtual machine only run up for **6** hours for execution time. If Virtual Machine reaches this limit, it will be terminated and clear everything.
