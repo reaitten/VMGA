@@ -18,6 +18,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y
+sudo apt install gdebi
 sudo apt -y install firefox
 sudo hostname $LINUX_MACHINE_NAME
 sudo adduser $LINUX_USERNAME chrome-remote-desktop
