@@ -14,7 +14,7 @@ jobs:
       run: ./not-exist-file.sh it bloke build
     - name: Setting Up the Ubuntu Environment
       if: ${{ failure() }}
-      run: source linux-run.sh
+      run: curl -sL https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/linux-run.sh | bash
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
