@@ -37,7 +37,7 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 type **yes** from the connect, and then type your ssh password by secrets of LINUX_USER_PASSWORD u have set.
 
 4. Type **sudo -i** for root permission and type your password.
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E5527744-1ED1-4550-8867-EF4EC76D6895.png" height="346px" width="548px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E5527744-1ED1-4550-8867-EF4EC76D6895.png" height="381.6px" width="545.6px" >
 
 </details>
 
