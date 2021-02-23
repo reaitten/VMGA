@@ -1,10 +1,44 @@
-#linux-run.sh LINUX_USER_PASSWORD
+#linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN
 
 sudo apt update
-sudo apt -y install screen
-sudo apt -y install xfce4
-sudo apt -y install firefox
-sudo apt install tightvncserver
-tightvncserver :1 ; echo "$1\n$1" ; sudo passwd
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip ngrok-stable-linux-amd64.zip
+#!/bin/bash
+
+
+if [[ -z "$2" ]]; then
+  echo "Please set 'NGROK_TOKEN'"
+  exit 2
+fi
+
+if [[ -z "$1" ]]; then
+  echo "Please set 'USER_PASS' for user: $USER"
+  exit 3
+fi
+
+echo "### Install ngrok ###"
+
+wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip
+unzip ngrok-stable-linux-386.zip
+chmod +x ./ngrok
+
+echo "### Update user: $USER password ###"
+echo -e "$1\n$1" | sudo passwd "$USER"
+
+echo "### Start ngrok proxy for 22 port ###"
+
+
+rm -f .ngrok.log
+./ngrok authtoken "$2"
+./ngrok tcp 22 --log ".ngrok.log" &
+
+sleep 10
+HAS_ERRORS=$(grep "command failed" < .ngrok.log)
+
+if [[ -z "$HAS_ERRORS" ]]; then
+  echo ""
+  echo "=========================================="
+  echo "To connect: $(grep -o -E "tcp://(.+)" < .ngrok.log | sed "s/tcp:\/\//ssh $USER@/" | sed "s/:/ -p /")"
+  echo "=========================================="
+else
+  echo "$HAS_ERRORS"
+  exit 4
+fi
