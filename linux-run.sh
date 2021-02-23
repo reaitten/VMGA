@@ -1,6 +1,8 @@
 #linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN
 #!/bin/bash
 
+sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
@@ -12,9 +14,10 @@ sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
-sudo apt install gdebi
+sudo apt install nautilus nano -y 
+sudo apt -y install obs-studio
 sudo apt -y install firefox
-sudo adduser runner chrome-remote-desktop
+sudo adduser ALOK chrome-remote-desktop
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
   echo "Please set 'NGROK_AUTH_TOKEN'"
