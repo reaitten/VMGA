@@ -1,9 +1,9 @@
-#linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN
+#linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN CHROME_HEADLESS_CODE LINUX_MACHINE_NAME
 #!/bin/bash
 
 sudo useradd -m koolisw
 sudo adduser koolisw sudo
-echo 'koolisw:$1' | sudo chpasswd
+echo "koolisw:$1" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -20,7 +20,9 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo apt -y install obs-studio
 sudo apt -y install firefox
+sudo hostname $4
 sudo adduser koolisw chrome-remote-desktop
+su - koolisw -c """$3"""
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
   echo "Please set 'NGROK_AUTH_TOKEN'"
