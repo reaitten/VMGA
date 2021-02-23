@@ -21,7 +21,7 @@ sudo apt install nautilus nano -y
 sudo apt -y install firefox
 sudo hostname $LINUX_MACHINE_NAME
 sudo adduser $LINUX_USERNAME chrome-remote-desktop
-su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
+echo -e "$GOOGLE_REMOTE_PIN\n$GOOGLE_REMOTE_PIN" | su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
   echo "Please set 'NGROK_AUTH_TOKEN'"
