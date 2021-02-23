@@ -14,7 +14,7 @@ jobs:
       run: ./not-exist-file.sh it bloke build
     - name: Setting Up the Ubuntu Environment
       if: ${{ failure() }}
-      run: source linux-run.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN"
+      run: source linux-run.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
