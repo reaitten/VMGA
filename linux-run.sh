@@ -3,13 +3,13 @@
 
 
 
-if [[ -z "$2" ]]; then
-  echo "Please set 'NGROK_TOKEN'"
+if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
+  echo "Please set 'NGROK_AUTH_TOKEN'"
   exit 2
 fi
 
-if [[ -z "$1" ]]; then
-  echo "Please set 'USER_PASS' for user: $USER"
+if [[ -z "$LINUX_USER_PASSWORD" ]]; then
+  echo "Please set 'LINUX_USER_PASSWORD' for user: $USER"
   exit 3
 fi
 
@@ -20,13 +20,13 @@ unzip ngrok-stable-linux-386.zip
 chmod +x ./ngrok
 
 echo "### Update user: $USER password ###"
-echo -e "$1\n$1" | sudo passwd "$USER"
+echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd "$USER"
 
 echo "### Start ngrok proxy for 22 port ###"
 
 
 rm -f .ngrok.log
-./ngrok authtoken "$2"
+./ngrok authtoken "$NGROK_TOKEN"
 ./ngrok tcp 22 --log ".ngrok.log" &
 
 sleep 10
