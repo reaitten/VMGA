@@ -6,8 +6,18 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 <details>
     <summary>Windows 10</summary>
 <br>
-
+    
+- Windows 10 Version
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png" height="405px" width="705px" >
+
+- Windows 10 Task Manager
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0cf98258-a6fe-46bb-ac9a-ee4bb3037e3a.png" height="405px" width="705px" >
+
+- Windows 10 Device Manager
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/d32cf285-5ecf-4cce-a52a-5cb54fb130c7.png" height="405px" width="705px" >
+
+- Windows 10 Device Specification
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/e1852b80-d550-44f3-b619-86ea82902bb4.png" height="405px" width="705px" >
     
 </details>
 
