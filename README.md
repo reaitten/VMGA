@@ -22,10 +22,14 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 </details>
 
 <details>
-    <summary>Windows 10</summary>
+    <summary>Ubuntu (Desktop Remote Version)</summary>
 <br>
 
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/96644176-D760-47D4-BED2-C47E62A6763F.png" height="193px" width="415px" >
+1. Click **Run Workflox**
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/96644176-D760-47D4-BED2-C47E62A6763F.png" height="289.5px" width="622.5px" >
+
+2. Copy ssh with url
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" height="60px" width="561px" >
 
 </details>
 
