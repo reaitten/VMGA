@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-    - name: If failed, means ok
-      run: ./not-exist-file.sh it bloke build
+ ##   - name: If failed, means ok
+ ##     run: ./not-exist-file.sh it bloke build
     - name: Setting Up the Ubuntu Environment
-      if: ${{ failure() }}
-      run: bash linux-desktop.sh "$LINUX_USER_PASSWORD" "$NGROK_AUTH_TOKEN" "$CHROME_HEADLESS_CODE" "$LINUX_MACHINE_NAME" "&LINUX_USERNAME"
+    ##  if: ${{ failure() }}
+      run: bash linux-desktop.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
@@ -22,5 +22,5 @@ jobs:
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
-      if: ${{ failure() }}
+    ##  if: ${{ failure() }}
       run: sleep 6h
