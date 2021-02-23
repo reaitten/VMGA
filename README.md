@@ -34,6 +34,11 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 3. Open cmd or Terminal from your windows/MacOS or Linux, and type command provided by github actions boxes.
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/78FE6C5A-7270-4986-AB8F-57EC4C9B4F44.png" height="346px" width="548px" >
 
+type **yes** from the connect, and then type your ssh password by secrets of LINUX_USER_PASSWORD u have set.
+
+4. Type **sudo -i** for root permission and type your password.
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E5527744-1ED1-4550-8867-EF4EC76D6895.png" height="346px" width="548px" >
+
 </details>
 
 ## Machine Specification:
