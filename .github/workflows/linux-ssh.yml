@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-##    - name: If failed, means ok
- #     run: ./not-exist-file.sh it bloke build
+    - name: If failed, means ok
+      run: ./not-exist-file.sh it bloke build
     - name: Setting Up the Ubuntu Environment
-   #   if: ${{ failure() }}
+      if: ${{ failure() }}
       run: source linux-ssh.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
@@ -22,5 +22,5 @@ jobs:
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
-    #  if: ${{ failure() }}
+      if: ${{ failure() }}
       run: sleep 6h
