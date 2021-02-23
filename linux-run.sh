@@ -1,8 +1,13 @@
 #linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN
-
-sudo apt update
 #!/bin/bash
 
+sudo apt-get update
+sudo apt -y install firefox
+sudo apt -y install screen
+sudo apt -y install xfce4
+sudo apt install tightvncserver
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg --install google-chrome-stable_current_amd64.deb
 
 if [[ -z "$2" ]]; then
   echo "Please set 'NGROK_TOKEN'"
