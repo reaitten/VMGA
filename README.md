@@ -29,7 +29,8 @@ Secrets Name | Uses | Notes
 <details>
     <summary>MacOS Install and Run</summary>
 <br>
-1. go to **Actions** Tab and select one of system workflow.
+    
+1. go to `Actions` Tab and select one of system workflow.
 
 2. Click `Run Workflow` button on the left of `This workflow has a workflow_dispatch event trigger` line.
 
