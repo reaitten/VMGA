@@ -2,6 +2,15 @@
 
 Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 
+## Screenshots:
+<details>
+    <summary>Windows 10</summary>
+<br>
+
+<img src="/img/post-bg-2015.jpg" height="100px" width="400px" >
+    
+</details>
+
 ## Machine Specification:
 ### Windows and Linux:
 - 2-core vCPU
