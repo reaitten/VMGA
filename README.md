@@ -23,6 +23,7 @@ Secrets Name | Uses | Notes
 `NGROK_AUTH_TOKEN` | For **ngrok** tunnel uses | Go to website, and copy the API key from https://dashboard.ngrok.com/auth/your-authtoken
 `VNC_PASSWORD` | For the login password of VNC remote authentication | Type any password you want
 `WINDOWS_USER_PASSWORD` | For Windows 10 RDP login password | Type any password you want
+`LINUX_USER_PASSWORD` | For linux shell and root password | Type any password you want
 
 ## Deloy and Run
 <details>
