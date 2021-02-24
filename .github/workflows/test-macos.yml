@@ -1,6 +1,5 @@
 name: MacOS Test
-on: 
-  workflow_dispatch:
+on: [push]
 defaults:
   run:
     shell: bash
