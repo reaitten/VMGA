@@ -1,6 +1,8 @@
 name: Ubuntu environment testing
 on: 
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 defaults:
   run:
     shell: bash
