@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    name: Windows 10 Build
     runs-on: windows-latest
     steps:
     - name: Download
