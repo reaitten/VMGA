@@ -8,16 +8,16 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 <br>
     
 - Windows 10 Version
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png" height="405px" width="705px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png">
 
 - Windows 10 Task Manager
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0cf98258-a6fe-46bb-ac9a-ee4bb3037e3a.png" height="405px" width="705px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0cf98258-a6fe-46bb-ac9a-ee4bb3037e3a.png" >
 
 - Windows 10 Device Manager
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/d32cf285-5ecf-4cce-a52a-5cb54fb130c7.png" height="405px" width="705px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/d32cf285-5ecf-4cce-a52a-5cb54fb130c7.png">
 
 - Windows 10 Device Specification
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/e1852b80-d550-44f3-b619-86ea82902bb4.png" height="405px" width="705px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/e1852b80-d550-44f3-b619-86ea82902bb4.png">
     
 </details>
 
@@ -26,21 +26,21 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 <br>
 
 1. Click **Run Workflox**
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/96644176-D760-47D4-BED2-C47E62A6763F.png" height="289.5px" width="622.5px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/96644176-D760-47D4-BED2-C47E62A6763F.png" >
 
 2. Copy ssh with url
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" height="300px" width="561px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" >
 
 3. Open cmd or Terminal from your windows/MacOS or Linux, and type command provided by github actions boxes.
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/78FE6C5A-7270-4986-AB8F-57EC4C9B4F44.png" height="346px" width="548px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/78FE6C5A-7270-4986-AB8F-57EC4C9B4F44.png" >
 
 type **yes** from the connect, and then type your ssh password by secrets of LINUX_USER_PASSWORD u have set.
 
 4. Type **sudo -i** for root permission and type your password.
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E5527744-1ED1-4550-8867-EF4EC76D6895.png" height="381.6px" width="545.6px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E5527744-1ED1-4550-8867-EF4EC76D6895.png" >
 
 5. Enjoy having your FREE linux SSH VPS and type any command you want.(but only 6 hours)
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E6E9EA63-AC24-4FDB-AAF9-8B509658440A.png" height="363.3px" width="526.4px">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E6E9EA63-AC24-4FDB-AAF9-8B509658440A.png" >
 
 </details>
 
@@ -49,10 +49,10 @@ type **yes** from the connect, and then type your ssh password by secrets of LIN
 <br>
 
 - Desktop Screenshot
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" height="363.3px" width="646.8px">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" >
 
 - Linux Chrome
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" height="363.3px" width="646.8px">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" >
 
 - Install any apps you want :)
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/A0886141-DF1E-4379-88E7-F00EDAD87D0E.png">
@@ -64,19 +64,19 @@ type **yes** from the connect, and then type your ssh password by secrets of LIN
 <br>
 
 - Desktop Screenshot
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.41%20AM.png" height="461.6px" width="739.spx">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.41%20AM.png" >
 
 - Settings
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.21%20AM.png" height="461.6px" width="739.spx">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.21%20AM.png" >
 
 - RAM
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.58%20AM.png" height="461.6px" width="739.spx">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.58%20AM.png" >
 
 - Storage
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.33.18%20AM.png" height="461.6px" width="739.spx">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.33.18%20AM.png" >
 
 - Pre-Installed Apps
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.34.10%20AM.png" height="461.6px" width="739.spx">
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.34.10%20AM.png" >
 
 </details>
 
@@ -129,7 +129,7 @@ Secrets Name | Uses | Notes
 
 - Reminders:
 :warning: Dont close this windows which called "**provisioner.exe**", it will cause the windows system process to be stopped and disconnect from Windows RDP.
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/9a56f43b-0734-4186-b619-1588c208eb05.png" height="405px" width="720px" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/9a56f43b-0734-4186-b619-1588c208eb05.png">
 
 :warnings: Dont install big sur updates on your macos virtual machine, it will break your remote process!
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.35.57%20AM.png">
