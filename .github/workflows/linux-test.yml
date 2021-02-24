@@ -1,8 +1,5 @@
 name: Ubuntu environment testing
-on: 
-  push:
-    branches:
-      - master
+on: [push]
 defaults:
   run:
     shell: bash
