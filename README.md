@@ -52,7 +52,7 @@ type **yes** from the connect, and then type your ssh password by secrets of LIN
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" >
 
 - Linux Chrome
-<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" >
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/09F0A4CF-9B30-44CD-8DC4-139D03DFC2CC.png" >
 
 - Install any apps you want :)
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/A0886141-DF1E-4379-88E7-F00EDAD87D0E.png">
