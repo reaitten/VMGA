@@ -4,6 +4,7 @@
 sudo mdutil -i off -a
 
 #Create new account
+sudo dscl . delete /users/runner
 sudo dscl . -create /Users/koolisw
 sudo dscl . -create /Users/koolisw UserShell /bin/bash
 sudo dscl . -create /Users/koolisw RealName $4
