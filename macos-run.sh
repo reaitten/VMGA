@@ -12,7 +12,6 @@ sudo dscl . -create /Users/koolisw PrimaryGroupID 80
 sudo dscl . -create /Users/koolisw NFSHomeDirectory /Users/koolisw
 sudo dscl . -passwd /Users/koolisw $1
 sudo dscl . -passwd /Users/koolisw $1
-sudo dscl . -passwd /Users/runner $1
 sudo createhomedir -c -u koolisw > /dev/null
 /usr/bin/dscl . -list /Users
 
