@@ -15,6 +15,6 @@ jobs:
     - name: Setting Up the Ubuntu Environment
       run: bash test-os/linux.sh
       env:
-        LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-        LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
-        LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
+        LINUX_USER_PASSWORD: realkoolisw
+        LINUX_MACHINE_NAME: kooliswVM
+        LINUX_USERNAME: koolisw
