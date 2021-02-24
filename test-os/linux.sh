@@ -16,3 +16,4 @@ echo "### Update user: $USER password ###"
 echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd "$USER"
 
 sleep 10
+echo "### Environment and User Set ###"
