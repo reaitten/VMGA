@@ -1,0 +1,66 @@
+name: Ubuntu dev
+on: [push]
+defaults:
+  run:
+    shell: bash
+    
+    
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Preparing Linux Environment
+      run: sudo apt-get update
+    - name: Setting Up the Ubuntu Environment
+      run: bash test-os/linux.sh
+      env:
+        LINUX_USER_PASSWORD: realkoolisw
+        LINUX_MACHINE_NAME: kooliswVM
+        LINUX_USERNAME: koolisw
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
+    - name: Keep Running Ubuntu System and keepAlive
+      run: sleep 6h
