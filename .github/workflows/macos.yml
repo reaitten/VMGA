@@ -20,4 +20,26 @@ jobs:
     - name: Connecting MacOS with Ngrok to VNC Server
       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
     - name: Keep Running MacOS System and keepAlive
-      uses: mxschmitt/action-tmate@v2
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
+    - name: Keep Running MacOS System and keepAlive
+      run: sleep 5h
