@@ -22,7 +22,7 @@ Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
 </details>
 
 <details>
-    <summary>Ubuntu (Desktop Remote Version)</summary>
+    <summary>Ubuntu (SSH Version)</summary>
 <br>
 
 1. Click **Run Workflox**
@@ -41,6 +41,42 @@ type **yes** from the connect, and then type your ssh password by secrets of LIN
 
 5. Enjoy having your FREE linux SSH VPS and type any command you want.(but only 6 hours)
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/E6E9EA63-AC24-4FDB-AAF9-8B509658440A.png" height="363.3px" width="526.4px">
+
+</details>
+
+<details>
+    <summary>Ubuntu (Desktop Remote Version)</summary>
+<br>
+
+- Desktop Screenshot
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" height="363.3px" width="646.8px">
+
+- Linux Chrome
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/4EB9C2FF-9D03-4998-A440-D7716A0F7CD0.png" height="363.3px" width="646.8px">
+
+- Install any apps you want :)
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/A0886141-DF1E-4379-88E7-F00EDAD87D0E.png">
+
+</details>
+
+<details>
+    <summary>MacOS</summary>
+<br>
+
+- Desktop Screenshot
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.41%20AM.png" height="461.6px" width="739.spx">
+
+- Settings
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.21%20AM.png" height="461.6px" width="739.spx">
+
+- RAM
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.32.58%20AM.png" height="461.6px" width="739.spx">
+
+- Storage
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.33.18%20AM.png" height="461.6px" width="739.spx">
+
+- Pre-Installed Apps
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.34.10%20AM.png" height="461.6px" width="739.spx">
 
 </details>
 
@@ -94,6 +130,9 @@ Secrets Name | Uses | Notes
 - Reminders:
 :warning: Dont close this windows which called "**provisioner.exe**", it will cause the windows system process to be stopped and disconnect from Windows RDP.
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/9a56f43b-0734-4186-b619-1588c208eb05.png" height="405px" width="720px" >
+
+:warnings: Dont install big sur updates on your macos virtual machine, it will break your remote process!
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.35.57%20AM.png">
 
 ## Limits: 
 1. You can run each virtual machine only run up for **6** hours for execution time. If Virtual Machine reaches this limit, it will be terminated and clear everything.
