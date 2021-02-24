@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   build:
+    name: Windows Test
     runs-on: windows-latest
     steps:
     - name: Enable TS
@@ -15,4 +16,4 @@ jobs:
     - name: Creating Local User
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
       env:
-        WINDOWS_USER_PASSWORD: realkoolisw
+        WINDOWS_USER_PASSWORD: RealKoolisw@!
