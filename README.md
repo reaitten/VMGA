@@ -131,7 +131,7 @@ Secrets Name | Uses | Notes
 :warning: Dont close this windows which called "**provisioner.exe**", it will cause the windows system process to be stopped and disconnect from Windows RDP.
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/9a56f43b-0734-4186-b619-1588c208eb05.png">
 
-:warnings: Dont install big sur updates on your macos virtual machine, it will break your remote process!
+:warning: Dont install big sur updates on your macos virtual machine, it will break your remote process!
 <img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/Screenshot%202021-02-23%20at%207.35.57%20AM.png">
 
 ## Limits: 
