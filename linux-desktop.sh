@@ -8,8 +8,6 @@ sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
-sudo apt -y install screen
-sudo apt -y install xfce4
 sudo apt install --assume-yes --fix-broken
 sudo DEBIAN_FRONTEND=noninteractive \
 apt install --assume-yes xfce4 desktop-base
@@ -25,7 +23,7 @@ sudo apt -y install firefox
 sudo hostname $LINUX_MACHINE_NAME
 sudo adduser $LINUX_USERNAME chrome-remote-desktop
 sudo apt install tightvncserver
-echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD\nn" | tightvncserver :1
+echo -e "no\n$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | tightvncserver :1
 echo -e "$GOOGLE_REMOTE_PIN\n$GOOGLE_REMOTE_PIN" | su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
@@ -40,8 +38,8 @@ fi
 
 echo "### Install ngrok ###"
 
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip ngrok-stable-linux-amd64.zip
+wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip
+unzip ngrok-stable-linux-386.zip
 chmod +x ./ngrok
 
 echo "### Update user: $USER password ###"
@@ -52,7 +50,7 @@ echo "### Start ngrok proxy for 22 port ###"
 
 rm -f .ngrok.log
 ./ngrok authtoken "$NGROK_AUTH_TOKEN"
-screen ./ngrok tcp 5901 &
+./ngrok tcp 22 --log ".ngrok.log" &
 
 sleep 10
 HAS_ERRORS=$(grep "command failed" < .ngrok.log)
