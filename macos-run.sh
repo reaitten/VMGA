@@ -31,5 +31,4 @@ brew install --cask ngrok
 
 #configure ngrok and start it
 ngrok authtoken $3
-nohup nohup ngrok start --all --config="/Users/runner/.ngrok2/ngrok.yml"
-ngrok tcp 5900 &
+nohup ngrok start tcp 5900 --config="/Users/runner/.ngrok2/ngrok.yml"
