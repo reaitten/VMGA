@@ -7,15 +7,30 @@ jobs:
   build:
     name: Windows 10 Build
     runs-on: windows-latest
+    timeout-minutes: 9999
+    
     steps:
     - name: Download
-      run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+      run: |
+       Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
+       Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/nssm.exe?raw=true -OutFile nssm.exe
     - name: Extract
       run: Expand-Archive ngrok.zip
+    - name: Copy NSSM & Ngrok to Windows Directory.
+      run: | 
+        copy nssm.exe C:\Windows\System32
+        copy .\ngrok\ngrok.exe C:\Windows\System32
     - name: Auth
-      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
+      run: |
+        .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+    - name: Installing Ngrok Process as a Windows Core Services
+      run: |
+        C:
+        cd C:\Users\runneradmin\.ngrok2
+        copy ngrok.yml C:\Windows\System32
+        nssm install ngrok C:\Windows\System32\ngrok.exe start --all --config="C:\Windows\System32\ngrok.yml"
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: Enabing Networking Firewall
