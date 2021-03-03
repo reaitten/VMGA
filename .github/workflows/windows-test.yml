@@ -23,7 +23,7 @@ jobs:
     - name: Auth
       run: |
         .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
-        copy ngrok.yml C:\Windows\System32
+        copy .\ngrok\ngrok.yml C:\Windows\System32
         nssm install ngrok C:\Windows\System32\ngrok.exe start --all --config="C:\Windows\System32\ngrok.yml"
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
