@@ -44,4 +44,4 @@ jobs:
     - name: Create Tunnel
       run: sc start ngrok
     - name: Looping Process
-      run: sleep 6h
+      run: mxschmitt/action-tmate@v2
