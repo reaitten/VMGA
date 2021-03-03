@@ -12,6 +12,7 @@ jobs:
     steps:
     - name: Download
       run: |
+       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/resources/windows-loop.bat -OutFile loop.bat
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/nssm.exe?raw=true -OutFile nssm.exe
     - name: Extract
@@ -44,4 +45,4 @@ jobs:
     - name: Create Tunnel
       run: sc start ngrok
     - name: Looping Process
-      run: mxschmitt/action-tmate@v2
+      run: cmd /c loop.bat 
