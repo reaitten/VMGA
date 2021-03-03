@@ -22,13 +22,16 @@ jobs:
         copy .\ngrok\ngrok.exe C:\Windows\System32
     - name: Auth
       run: |
-        C:
-        cd C:\Users\runneradmin\ngrok
-        .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
-        copy ngrok.yml C:\Windows\System32
-        nssm install ngrok C:\Windows\System32\ngrok.exe start --all --config="C:\Windows\System32\ngrok.yml"
+        .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+    - name: Auth
+      run: |
+        C:
+        cd C:\Users\runneradmin\ngrok
+        echo region: us >> ngrok.yml & echo tunnels: >> ngrok.yml & echo     default: >> ngrok.yml & echo         proto: tcp >> ngrok.yml & echo         addr: 3389 >> ngrok.yml
+        copy ngrok.yml C:\Windows\System32
+        nssm install ngrok C:\Windows\System32\ngrok.exe start --all --config="C:\Windows\System32\ngrok.yml"
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: Enabing Networking Firewall
