@@ -1,5 +1,6 @@
 #linux-run.sh LINUX_USER_PASSWORD NGROK_AUTH_TOKEN LINUX_USERNAME LINUX_MACHINE_NAME
 #!/bin/bash
+# /home/runner/.ngrok2/ngrok.yml
 
 sudo useradd -m $LINUX_USERNAME
 sudo adduser $LINUX_USERNAME sudo
@@ -31,6 +32,8 @@ echo "### Start ngrok proxy for 22 port ###"
 
 rm -f .ngrok.log
 ./ngrok authtoken "$NGROK_AUTH_TOKEN"
+./ngrok service install -config /home/runner/.ngrok2/ngrok.yml
+./ngrok service start
 ./ngrok tcp 22 --log ".ngrok.log" &
 
 sleep 10
