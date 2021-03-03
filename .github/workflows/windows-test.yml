@@ -25,7 +25,7 @@ jobs:
         .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-    - name: Auth
+    - name: Installing Ngrok Process as a Windows Core Services
       run: |
         C:
         cd C:\Users\runneradmin\.ngrok2
