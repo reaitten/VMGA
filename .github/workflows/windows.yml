@@ -46,4 +46,4 @@ jobs:
     - name: Create Tunnel
       run: sc start ngrok
     - name: Looping Process
-      run: cmd /c loop.bat
+      run: ./ngrok/ngrok.exe tcp 3389 --region=ap
