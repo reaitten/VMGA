@@ -10,6 +10,8 @@ jobs:
     timeout-minutes: 9999
     
     steps:
+    - name: Rename PC
+      run: Rename-Computer -NewName "KooliswVM" -DomainCredential Domain01\Admin01 -Restart
     - name: Download
       run: |
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
@@ -32,7 +34,7 @@ jobs:
         cd C:\Users\runneradmin\.ngrok2
         copy ngrok.yml C:\Windows\System32
         nssm install ngrok C:\Windows\System32\ngrok.exe start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
-        nssm set ngrok Start SERVICE_AUTO_START 
+        nssm set ngrok Start SERVICE_AUTO_START
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: Enabing Networking Firewall
@@ -40,7 +42,8 @@ jobs:
     - name: Setting up RDP TCP UserAuthentication
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - name: Creating Local User
-      run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
+      run: |
+        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Create Tunnel
