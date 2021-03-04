@@ -32,7 +32,7 @@ jobs:
         cd C:\Users\runneradmin\.ngrok2
         copy ngrok.yml C:\Windows\System32
         nssm install ngrok C:\Windows\System32\ngrok.exe 
-        nssm start ngrok start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
+        
         nssm set ngrok Start SERVICE_AUTO_START 
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
@@ -45,6 +45,6 @@ jobs:
       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Create Tunnel
-      run: sc start ngrok
+      run: nssm start ngrok start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
     - name: Looping Process
       run: cmd /c loop.bat
