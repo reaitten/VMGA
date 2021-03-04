@@ -1,4 +1,4 @@
-### :warning: Reminder: If you are facing errors when starting the systems and vps, pleasr fork and pull the newest version of codes of this repo to your forked repo. Press [here](#--Updating-Codes) for steps. 
+### :warning: Reminder: If you are facing errors when starting the systems and vps, pleasr fork and pull the newest version of codes of this repo to your forked repo. Press [here](#Updating-Codes) for steps. 
 
 # Free Virtual Machine by Github Action
 
