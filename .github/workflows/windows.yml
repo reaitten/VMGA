@@ -31,7 +31,9 @@ jobs:
         C:
         cd C:\Users\runneradmin\.ngrok2
         copy ngrok.yml C:\Windows\System32
-        nssm install ngrok C:\Windows\System32\ngrok.exe start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
+        nssm install ngrok C:\Windows\System32\ngrok.exe 
+        nssm start ngrok start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
+        nssm set ngrok Start SERVICE_AUTO_START 
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: Enabing Networking Firewall
