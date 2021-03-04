@@ -130,6 +130,30 @@ Secrets Name | Uses | Notes
 
 </details>
 
+<details>
+    <summary>Windows 10</summary>
+<br>
+
+1. First, start the actions of Windows 10 System.
+2. Second, Go to https://dashboard.ngrok.com/status/tunnels and check if theres a one online tunnel running.
+3. Go to Windows Remote Desktop Connection app or Microsoft Remote Desktop software to connect to windows 10 VPS.
+4. ENJOY!
+
+</details>
+
+<details>
+    <summary>Linux</summary>
+<br>
+
+1. First, start the actions of Linux System.
+2. Second, Copy the link from the console
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" >
+3. Go to MacOS Terminal or Windows CMD Terminal or else ssh client and enter command provided. Enter your ssh password then.
+<img src="https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/screenshots/78FE6C5A-7270-4986-AB8F-57EC4C9B4F44.png" >
+4. ENJOY!
+
+</details>
+
 
 - Reminders:
 :warning: Dont close this windows which called "**provisioner.exe**", it will cause the windows system process to be stopped and disconnect from Windows RDP.
