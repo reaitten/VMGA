@@ -14,6 +14,7 @@ jobs:
       run: |
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/nssm.exe?raw=true -OutFile nssm.exe
+       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/resources/windows-loop.bat -OutFile loop.bat
     - name: Extract
       run: Expand-Archive ngrok.zip
     - name: Copy NSSM & Ngrok to Windows Directory.
@@ -30,7 +31,7 @@ jobs:
         C:
         cd C:\Users\runneradmin\.ngrok2
         copy ngrok.yml C:\Windows\System32
-        nssm install ngrok C:\Windows\System32\ngrok.exe start --all --config="C:\Windows\System32\ngrok.yml"
+        nssm install ngrok C:\Windows\System32\ngrok.exe start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: Enabing Networking Firewall
@@ -42,4 +43,6 @@ jobs:
       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Create Tunnel
-      run: .\ngrok\ngrok.exe -region=ap tcp 3389
+      run: sc start ngrok
+    - name: Looping Process
+      run: cmd /c loop.bat
