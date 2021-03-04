@@ -1,4 +1,4 @@
-c3abcfbdbaf362f63acff65093ca651c0b7a2562c3abcfbdbaf362f63acff65093ca651c0b7a2562c3abcfbdbaf362f63acff65093ca651c0b7a2562name: Windows Server 2019
+name: Windows Server 2019
 
 on: 
   workflow_dispatch:
