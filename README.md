@@ -1,6 +1,6 @@
 # Free Virtual Machine by Github Action
 
-[繁體中文](https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/supports/README-zh.md)
+[繁體中文](https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/supports/README-zh.md) [English (Current)](#)
 
 :warning: Reminder: If you are facing errors when starting the systems and vps, please fork and pull the newest version of codes of this repo to your forked repo. Press [here](#Updating-Codes) for steps. 
 Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
