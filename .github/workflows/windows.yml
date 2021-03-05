@@ -10,16 +10,19 @@ jobs:
     timeout-minutes: 9999
     
     steps:
+    - name: Creating Local User
+      run: |
+        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
+      env:
+        WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Download
       run: |
-       Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
+       Invoke-WebRequest https://github.com/RealKoolisw/FREE-RDP-VirtualMachine/releases/download/ngrok/ngrok.exe -OutFile ngrok.exe
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/nssm.exe?raw=true -OutFile nssm.exe
-    - name: Extract
-      run: Expand-Archive ngrok.zip
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
-        copy .\ngrok\ngrok.exe C:\Windows\System32
+        copy ngrok.exe C:\Windows\System32
     - name: Auth
       run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
@@ -49,9 +52,9 @@ jobs:
         echo All done! Connect your VM using RDP.
         echo IP:
         tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo NGROK Services is not Running
-      env:
+       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
-    - name: Looping Process
+     - name: Looping Process
       run: |
         @echo off
         tasklist | find /i "ngrok.exe" >Nul && goto check || echo "NGROK Services is not Running. One NGROK FREE Account/ 1 Tunnel, If u want Run more VM, Update new NGROK_AUTH_TOKEN into Settings> Secrets> Repository secrets then run workflow again. Your current workflow end shortly" & ping 127.0.0.1 >Nul & exit
