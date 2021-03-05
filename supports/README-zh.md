@@ -2,6 +2,7 @@
 
 你幾乎可以在這裏領取免費的MacOS, Windows 10以及Ubuntu的虛擬機
 :warning: 溫馨提示: 若果你發現某個系統啟動的時候操作發生問題, 敬請在[這裏](https://github.com/RealKoolisw/VirtualMachine-GithubAction/issues)建立問題, 並且請保持更新你的複製專案
+按[此處](#%E6%9B%B4%E6%96%B0%E4%BB%A3%E7%A2%BC)進行操作. 
 
 ## 屏幕截圖
 <details>
@@ -188,6 +189,6 @@ Secrets 名稱 | 用途 | 備註
 3.由於我們使用的是 `ngrok`，由於ngrok免費計劃的限制，您只能一台運行這三個系統中的一個，除非您購買了 `ngrok`專業或商業計劃，否則您無法同時訪問兩個系統。
 4.不建議從任何網站（就像`Google`或`Microsoft`）一樣登錄任何帳戶，因為VNC連接未加密並且很容易被其他人訪問。
 
-##建議和最佳技巧：
+## 建議和最佳技巧：
 -如果您面對來自`MacOS`或`Windows`的緩慢而緩慢的遠程控制體驗，則可以使用`Google Remote Desktop`或`Microsoft Remote Control`來獲得更快，更流暢的遠程控制。
 -我們強烈建議您**fork**該項目，以更改系統的用戶名和其他顯示名稱。
