@@ -10,11 +10,6 @@ jobs:
     timeout-minutes: 9999
     
     steps:
-    - name: Creating Local User
-      run: |
-        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
-      env:
-        WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Download
       run: |
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/ngrok-stable-windows-amd64.zip?raw=true -OutFile ngrok.zip
@@ -26,8 +21,7 @@ jobs:
         copy nssm.exe C:\Windows\System32
         copy .\ngrok\ngrok.exe C:\Windows\System32
     - name: Auth
-      run: |
-        .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
+      run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     - name: Installing Ngrok Process as a Windows Core Services
@@ -35,8 +29,7 @@ jobs:
         C:
         cd C:\Users\runneradmin\.ngrok2
         copy ngrok.yml C:\Windows\System32
-        nssm install ngrok C:\Windows\System32\ngrok.exe start tcp 3389 --region=ap --config="C:\Windows\System32\ngrok.yml"
-        nssm set ngrok Start SERVICE_AUTO_START
+        nssm install ngrok C:\Windows\System32\ngrok.exe start --all --config="C:\Windows\System32\ngrok.yml"
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: Enabing Networking Firewall
@@ -46,4 +39,23 @@ jobs:
     - name: Create Tunnel
       run: sc start ngrok
     - name: Looping Process
-      run: ./ngrok/ngrok.exe tcp 3389 --region=ap
+      run: |
+        @echo off
+        diskperf -Y >nul
+        sc start audiosrv >nul
+        net user koolisw $Env:WINDOWS_USER_PASSWORD /add >nul
+        net localgroup administrators koolisw /add >nul
+        net user koolisw /active:yes >nul
+        echo All done! Connect your VM using RDP.
+        echo IP:
+        tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo NGROK Services is not Running
+      env:
+        WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
+    - name: Looping Process
+      run: |
+        @echo off
+        tasklist | find /i "ngrok.exe" >Nul && goto check || echo "NGROK Services is not Running. One NGROK FREE Account/ 1 Tunnel, If u want Run more VM, Update new NGROK_AUTH_TOKEN into Settings> Secrets> Repository secrets then run workflow again. Your current workflow end shortly" & ping 127.0.0.1 >Nul & exit
+        :check
+        ping 127.0.0.1 > nul
+        cls
+        goto check
