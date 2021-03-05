@@ -1,7 +1,7 @@
 # Github Actions提供的免費虛擬機器(體驗/臨時)
 
-你幾乎可以在這裏領取免費的MacOS, Windows 10以及Ubuntu的虛擬機
-:warning: 溫馨提示: 若果你發現某個系統啟動的時候操作發生問題, 敬請在[這裏](https://github.com/RealKoolisw/VirtualMachine-GithubAction/issues)建立問題, 並且請保持更新你的複製專案
+你幾乎可以在這裏領取免費的MacOS, Windows 10以及Ubuntu的虛擬機\
+:warning: 溫馨提示: 若果你發現某個系統啟動的時候操作發生問題, 敬請在[這裏](https://github.com/RealKoolisw/VirtualMachine-GithubAction/issues)建立問題, 並且請保持更新你的複製專案,
 按[此處](#%E6%9B%B4%E6%96%B0%E4%BB%A3%E7%A2%BC)進行操作. 
 
 ## 屏幕截圖
