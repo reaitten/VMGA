@@ -94,6 +94,7 @@
 ## 配置:
 
 1.Fork此項目
+
 2.轉到您的項目頁面，單擊“Settings”並轉到“Secrets”，然後單擊“New Secrets”以在下面添加這些Secrets：
 
 Secrets 名稱 | 用途 | 備註
