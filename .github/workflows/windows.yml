@@ -10,15 +10,12 @@ jobs:
     timeout-minutes: 9999
     
     steps:
-    - name: Creating Local User
-      run: |
-        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText $Env:WINDOWS_USER_PASSWORD -Force)
-      env:
-        WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Download
       run: |
        Invoke-WebRequest https://github.com/RealKoolisw/FREE-RDP-VirtualMachine/releases/download/ngrok/ngrok.exe -OutFile ngrok.exe
        Invoke-WebRequest https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/resources/nssm.exe?raw=true -OutFile nssm.exe
+       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/FREE-RDP-VirtualMachine/main/resources/ngrok-user.bat -OutFile ngrok-user.bat
+       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/FREE-RDP-VirtualMachine/main/resources/ngrok-loop.bat -OutFile ngrok-loop.bat
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
@@ -41,22 +38,9 @@ jobs:
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - name: Create Tunnel
       run: sc start ngrok
-    - name: Looping Process
-      run: |
-        diskperf -Y >nul
-        sc start audiosrv >nul
-        net user koolisw $Env:WINDOWS_USER_PASSWORD /add >nul
-        net localgroup administrators koolisw /add >nul
-        net user koolisw /active:yes >nul
-        echo All done! Connect your VM using RDP.
-        echo IP:
-        tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo NGROK Services is not Running
+    - name: Connecting Process
+      run: cmd /c ngrok-user.bat
       env:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Looping Process
-      run: |
-        tasklist | find /i "ngrok.exe" >Nul && goto check || echo "NGROK Services is not Running. One NGROK FREE Account/ 1 Tunnel, If u want Run more VM, Update new NGROK_AUTH_TOKEN into Settings> Secrets> Repository secrets then run workflow again. Your current workflow end shortly" & ping 127.0.0.1 >Nul & exit
-        :check
-        ping 127.0.0.1 > nul
-        cls
-        goto check
+      run: cmd /c ngrok-loop.bat
