@@ -170,16 +170,16 @@ Secrets 名稱 | 用途 | 備註
 <br>
 
 1. 首先，點擊 `compare`.
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/71352891-F8EF-4A27-A7FC-34960DAE9676.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/71352891-F8EF-4A27-A7FC-34960DAE9676.jpeg">
 
 2. 其次，按照以下說明操作，然後按`Pull Request`。
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/ED0C5969-7230-4846-A692-1E1DA63EF44E.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/ED0C5969-7230-4846-A692-1E1DA63EF44E.jpeg">
 
 3. 第三，在標題上鍵入任何內容並創建`Pull Request`。
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/F972E631-1940-4DED-8988-98C97221F6C4.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/F972E631-1940-4DED-8988-98C97221F6C4.jpeg">
 
 4. 第四，在您重定向到的頁面下單擊`Merge Pull Request`。
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/65837991-741A-4DE2-A139-7CF9D0E75692.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/65837991-741A-4DE2-A139-7CF9D0E75692.jpeg">
     
 </details>
 
