@@ -168,16 +168,16 @@ Secrets Name | Uses | Notes
 <br>
 
 1. First, click **compare**.
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/71352891-F8EF-4A27-A7FC-34960DAE9676.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/71352891-F8EF-4A27-A7FC-34960DAE9676.jpeg">
 
 2. Second, follow instruction below and press crate pull request.
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/ED0C5969-7230-4846-A692-1E1DA63EF44E.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/ED0C5969-7230-4846-A692-1E1DA63EF44E.jpeg">
 
 3. Third, type anything on the title amd create a pull request.
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/F972E631-1940-4DED-8988-98C97221F6C4.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/F972E631-1940-4DED-8988-98C97221F6C4.jpeg">
 
 4. Fourth, click merge pull request under the page you have redirected to.
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/65837991-741A-4DE2-A139-7CF9D0E75692.jpeg">
+<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sync-steps/65837991-741A-4DE2-A139-7CF9D0E75692.jpeg">
     
 </details>
 
