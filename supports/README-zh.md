@@ -136,9 +136,9 @@ Secrets 名稱 | 用途 | 備註
     <summary>Windows 10</summary>
 <br>
 
-1.首先，啟動Windows 10系統的操作。
-2.其次，轉到 https://dashboard.ngrok.com/status/tunnels ，檢查是否有一個在線隧道在運行。
-3.轉到Windows遠程桌面連接應用程序或Microsoft遠程桌面軟件以連接到Windows 10 VPS。
+1.首先，啟動Windows 10系統的操作。\
+2.其次，轉到 https://dashboard.ngrok.com/status/tunnels ，檢查是否有一個在線隧道在運行。\
+3.轉到Windows遠程桌面連接應用程序或Microsoft遠程桌面軟件以連接到Windows 10 VPS。\
 4.享受！
 
 </details>
@@ -147,8 +147,8 @@ Secrets 名稱 | 用途 | 備註
     <summary>Linux</summary>
 <br>
 
-1.首先，開始Linux System的操作。
-2.其次，從控制台複製鏈接
+1.首先，開始Linux System的操作。\
+2.其次，從控制台複製鏈接\
 <img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/0F804C5F-FE8F-45FA-9720-F91F212597DF.png" >
 3. 轉到MacOS Terminal或Windows CMD Terminal或ssh客戶端，然後輸入提供的命令。 然後輸入您的ssh密碼。
 <img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/78FE6C5A-7270-4986-AB8F-57EC4C9B4F44.png" >
@@ -184,11 +184,11 @@ Secrets 名稱 | 用途 | 備註
 </details>
 
 ## 限制：
-1.您可以運行每個虛擬機，其運行時間只能運行 `6`小時。如果虛擬機達到此限制，它將終止並清除所有內容。
-2.不建議您將一些重要且敏感的文件保存到每台計算機上，否則所有文件都將被刪除並且無法撤消。
-3.由於我們使用的是 `ngrok`，由於ngrok免費計劃的限制，您只能一台運行這三個系統中的一個，除非您購買了 `ngrok`專業或商業計劃，否則您無法同時訪問兩個系統。
+1.您可以運行每個虛擬機，其運行時間只能運行 `6`小時。如果虛擬機達到此限制，它將終止並清除所有內容。\
+2.不建議您將一些重要且敏感的文件保存到每台計算機上，否則所有文件都將被刪除並且無法撤消。\
+3.由於我們使用的是 `ngrok`，由於ngrok免費計劃的限制，您只能一台運行這三個系統中的一個，除非您購買了 `ngrok`專業或商業計劃，否則您無法同時訪問兩個系統。\
 4.不建議從任何網站（就像`Google`或`Microsoft`）一樣登錄任何帳戶，因為VNC連接未加密並且很容易被其他人訪問。
 
 ##  建議和最佳技巧：
--如果您面對來自`MacOS`或`Windows`的緩慢而緩慢的遠程控制體驗，則可以使用`Google Remote Desktop`或`Microsoft Remote Control`來獲得更快，更流暢的遠程控制。
--我們強烈建議您**fork**該項目，以更改系統的用戶名和其他顯示名稱。
+- 如果您面對來自`MacOS`或`Windows`的緩慢而緩慢的遠程控制體驗，則可以使用`Google Remote Desktop`或`Microsoft Remote Control`來獲得更快，更流暢的遠程控制。\
+- 我們強烈建議您**fork**該項目，以更改系統的用戶名和其他顯示名稱。
