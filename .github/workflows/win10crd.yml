@@ -2,7 +2,7 @@ name: Windows 10 CRD
 
 on: 
   workflow_dispatch:
-  inputs:
+   inputs:
       crdauthcode:
         description: 'Enter ChromeRemoteDesktop Headless code'
         required: true
