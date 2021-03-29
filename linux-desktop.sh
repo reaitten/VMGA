@@ -7,9 +7,11 @@ if [[ -z "$LINUX_USER_PASSWORD" ]]; then
 fi
 
 sudo -i
-echo "runner:$LINUX_USER_PASSWORD" | sudo chpasswd
+sudo useradd -m $LINUX_USERNAME
+sudo adduser $LINUX_USERNAME sudo
+echo "$LINUX_USERNAME:$LINUX_USER_PASSWORD" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
-echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd runner
+echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd "$USER"
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
