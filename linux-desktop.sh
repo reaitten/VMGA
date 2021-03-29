@@ -24,7 +24,7 @@ sudo hostname $LINUX_MACHINE_NAME
 sudo adduser $LINUX_USERNAME chrome-remote-desktop
 sudo apt install tightvncserver
 echo -e "no\n$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | tightvncserver :1
-echo -e "$GOOGLE_REMOTE_PIN\n$GOOGLE_REMOTE_PIN" | su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE"""
+su - $LINUX_USERNAME -c """$CHROME_HEADLESS_CODE --pin=$GOOGLE_REMOTE_PIN"""
 
 if [[ -z "$NGROK_AUTH_TOKEN" ]]; then
   echo "Please set 'NGROK_AUTH_TOKEN'"
