@@ -9,6 +9,7 @@ fi
 sudo -i
 echo "runner:$LINUX_USER_PASSWORD" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd runner
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
@@ -26,9 +27,4 @@ sudo apt install gdebi
 sudo apt -y install firefox
 sudo hostname $LINUX_MACHINE_NAME
 sudo adduser runner chrome-remote-desktop
-sudo apt install tightvncserver
-echo -e "no\n$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | tightvncserver :1
 su - runner -c """$CHROME_HEADLESS_CODE --pin=$GOOGLE_REMOTE_PIN"""
-
-echo "### Update user: $USER password ###"
-echo -e "$LINUX_USER_PASSWORD\n$LINUX_USER_PASSWORD" | sudo passwd "$USER"
