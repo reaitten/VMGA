@@ -27,4 +27,4 @@ sudo apt install gdebi
 sudo apt -y install firefox
 sudo hostname $LINUX_MACHINE_NAME
 sudo adduser runner chrome-remote-desktop
-su - runner -c """$CHROME_HEADLESS_CODE --pin=$GOOGLE_REMOTE_PIN"""
+echo -e "$LINUX_USER_PASSWORD" | su - runner -c """$CHROME_HEADLESS_CODE --pin=$GOOGLE_REMOTE_PIN"""
