@@ -19,6 +19,6 @@ jobs:
         MAC_REALNAME: ${{ secrets.MAC_REALNAME }}
       run: source macos-run.sh "$MAC_USER_PASSWORD" "$VNC_PASSWORD" "$NGROK_AUTH_TOKEN" "$MAC_REALNAME"
     - name: Connecting MacOS with Ngrok to VNC Server
-      run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
+      run: printf "redacted." | curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
     - name: Keep Running MacOS System and keepAlive
-      uses: mxschmitt/action-tmate@v2
+      uses: yes 1
