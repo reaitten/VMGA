@@ -28,7 +28,6 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 # install ngrok, anydesk and watch.
 brew update
 brew install --cask ngrok anydesk
-sudo port install watch
 
 #configure ngrok and start it
 ngrok authtoken $3
