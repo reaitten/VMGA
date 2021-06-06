@@ -29,6 +29,10 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 brew update
 brew install --cask ngrok anydesk
 
+# https://stackoverflow.com/questions/16242025/term-environment-variable-not-set#16252511
+set | grep TERM
+export TERM=xterm
+
 #configure ngrok and start it
 ngrok authtoken $3
 ngrok tcp 5900 --region=ap &
