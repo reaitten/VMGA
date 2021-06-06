@@ -2,13 +2,15 @@
 
 [繁體中文](https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/supports/README-zh.md) [English](#)
 
+usr: koolisw
+
 :warning: Reminder: If you are facing errors when starting the systems and vps, please fork and pull the newest version of codes of this repo to your forked repo. Press [here](#Updating-Codes) for steps. 
 
 <details>
     <summary>Ubuntu (SSH Version)</summary>
 <br>
 
-1. Click **Run Workflox**
+1. Click **Run Workflow**
 <img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/96644176-D760-47D4-BED2-C47E62A6763F.png" >
 
 2. Copy ssh with url
