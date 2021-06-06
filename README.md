@@ -1,28 +1,8 @@
-# Free Virtual Machine by Github Action
+# VMGA
 
 [繁體中文](https://github.com/RealKoolisw/VirtualMachine-GithubAction/blob/main/supports/README-zh.md) [English](#)
 
 :warning: Reminder: If you are facing errors when starting the systems and vps, please fork and pull the newest version of codes of this repo to your forked repo. Press [here](#Updating-Codes) for steps. 
-Totally FREE for everyone to enjoy your own MacOS, Windows 10 and ubuntu vps.
-
-## Screenshots:
-<details>
-    <summary>Windows 10</summary>
-<br>
-    
-- Windows 10 Version
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/268600af-c8b9-47cf-b5dd-d1c1ed6d9ce9.png">
-
-- Windows 10 Task Manager
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/0cf98258-a6fe-46bb-ac9a-ee4bb3037e3a.png" >
-
-- Windows 10 Device Manager
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/d32cf285-5ecf-4cce-a52a-5cb54fb130c7.png">
-
-- Windows 10 Device Specification
-<img src="https://raw.githubusercontent.com/RealKoolisw/image/main/VirtualMachine-GHAction/sceenshots/e1852b80-d550-44f3-b619-86ea82902bb4.png">
-    
-</details>
 
 <details>
     <summary>Ubuntu (SSH Version)</summary>
