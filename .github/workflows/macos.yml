@@ -1,4 +1,4 @@
-name: MacOS Virtual Machine
+name: MacOS VM
 on: 
   workflow_dispatch:
 defaults:
