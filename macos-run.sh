@@ -26,7 +26,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 #install ngrok
-brew install --cask ngrok
+brew install --cask ngrok anydesk
 
 #configure ngrok and start it
 ngrok authtoken $3
